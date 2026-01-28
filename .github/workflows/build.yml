@@ -35,10 +35,3 @@ jobs:
         with:
           name: app-artifact-flask
           path: flask-app.tar.gz
-
-  
-        run: |
-          echo "Deploying to PROD environment..."
-          mkdir prod-release
-          tar -xzf flask-app.tar.gz -C prod-release
-          ls -R prod-release  
